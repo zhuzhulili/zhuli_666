@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "iconfont";
+    /* Project id 3650607 */
+    src: url('./iconfont.woff2?t=1663237506754') format('woff2'),
+        url('./iconfont.woff?t=1663237506754') format('woff'),
+        url('./iconfont.ttf?t=1663237506754') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_fabu:before {
+    content: "\eb88";
+}
+
+.icon-daochu1024-26:before {
+    content: "\e617";
+}
