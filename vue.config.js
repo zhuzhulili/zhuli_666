@@ -2,10 +2,12 @@
  * @Description: 
  * @Author: Zhu li
  * @Date: 2021-12-05 00:15:36
- * @LastEditTime: 2022-09-15 17:15:13
+ * @LastEditTime: 2022-11-17 19:31:39
  * @LastEditors: zl
  */
 const path = require('path')
+const startAPI = process.env.VUE_APP_BASE_URL
+const proxyUrl = process.env.VUE_APP_URL
 module.exports = {
   publicPath: './', // 公共路径
   lintOnSave: false,
@@ -29,22 +31,16 @@ module.exports = {
     },
     proxy: {
       // 配置多个跨域
-      '/api': {
+      [startAPI]: {
         // target: 'http://121.89.177.77:8003',
-        target: 'http://192.168.31.119:1521',
+        target: proxyUrl,
         changeOrigin: true,
         // ws: true,//websocket支持
         // secure: false,
         logLevel: 'debug',
         pathRewrite: {
-          '^/api': ''
+          ['^' + startAPI]: ''
         }
-      },
-
-      '/admin': {
-        target: 'http://192.168.31.119:1522',
-        changeOrigin: true,
-        logLevel: 'debug',
       },
     },
     headers: {

@@ -1,13 +1,13 @@
 <!--
  * @LastEditors: zl
  * @Date: 2022-09-15 16:42:07
- * @LastEditTime: 2022-09-15 16:50:14
+ * @LastEditTime: 2022-11-17 18:48:25
  * @Email: 
  * @Description: 
 -->
 <template>
   <div id="app">
-    <HelloWorld />
+    <router-view></router-view>
   </div>
 </template>
 
