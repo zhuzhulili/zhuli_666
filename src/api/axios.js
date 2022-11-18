@@ -4,11 +4,11 @@
  * @Author: zhuLi
  * @Date: 2020-10-16 11:01:46
  * @LastEditors: zl
- * @LastEditTime: 2022-11-17 18:47:16
+ * @LastEditTime: 2022-11-18 15:17:38
  */
 import axios from 'axios';
 import qs from 'qs';
-import router from '../../router';
+import router from '../router';
 import {
   Loading,
   Message

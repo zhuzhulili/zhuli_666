@@ -4,10 +4,10 @@
  * @Author: zhuLi
  * @Date: 2020-09-22 15:25:41
  * @LastEditors: zl
- * @LastEditTime: 2022-11-17 19:33:24
+ * @LastEditTime: 2022-11-18 15:17:25
  * 获取环境类型数据的初始化
  */
-import { getUsersList } from '../../assets/api';
+import { getUsersList } from '../../api';
 const getUsers = {
   namespaced: true, // 这里是解决不同模块命名冲突的问题,但是所有数据都还在一个挂载点上
   state: {

@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Zhu li
  * @Date: 2021-12-05 00:15:36
- * @LastEditTime: 2022-11-17 19:31:39
+ * @LastEditTime: 2022-11-18 15:19:38
  * @LastEditors: zl
  */
 const path = require('path')
@@ -49,7 +49,7 @@ module.exports = {
   },
   chainWebpack: config => {
     config.plugin('html').tap(args => {
-      args[0].title = '国家能源集团';
+      args[0].title = '基本框架';
       return args;
     })
     //svg图标
